@@ -7,7 +7,6 @@ from flasik.cli import (command, option, argument, click)
 from flasik import db, models
 import core
 import nltk
-import schedule
 import time
 import logging
 
