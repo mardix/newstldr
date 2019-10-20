@@ -30,7 +30,7 @@ import feedparser
 from . import (article_parser, youtube, imagesize)
 from sqlalchemy import exc
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 # register_package(__name__)
 

@@ -16,7 +16,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="newstldr",
-    version="0.2.0",
+    version="0.3.0",
     license="MIT",
     author="Mardix",
     author_email="mcx2082@gmail.com",

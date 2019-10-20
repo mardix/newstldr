@@ -15,8 +15,9 @@ logging.basicConfig(level=logging.INFO)
 @command("news:setup")
 def setup():
     """ Setup Newsroom """
-    nltk.download('stopwords')
-    nltk.download('punkt')
+    #nltk.download('stopwords')
+    #nltk.download('punkt')
+    nltk.download('all')
 
 
 @command("news:worker:run-taskq")
