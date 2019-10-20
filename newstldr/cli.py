@@ -15,22 +15,23 @@ logging.basicConfig(level=logging.INFO)
 @command("news:setup")
 def setup():
     """ Setup Newsroom """
-    nltk.download('stopwords');
+    nltk.download('stopwords')
+    nltk.download('punkt')
 
 
 @command("news:worker:run-taskq")
 def worker_run():
     """ Worker: Run Task Queues """
-    logging.info("news:worker:run-taskq")
+    logging.info("ntldr:workers:run-taskq")
     models.NewsroomTaskQueue.run()
 
 
 @command("news:worker:import-sources")
 def worker_import_sources():
     """ Worker: Import sources """
-    pause = 1  # in minutes
+    pause = 15  # in minutes
     while True:
-        logging.info("Worker: importing sources...")
+        logging.info("ntldr:workers:import-sources")
         core.import_sources()
         time.sleep(pause * 60)
 
